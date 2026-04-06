@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Resume Builder</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- LEFT PANEL -->
+  <aside class="sidebar">
+
+    <h2>Resume Builder</h2>
+
+    <!-- BASIC -->
+    <div class="block">
+      <label>Name</label>
+      <input data-bind="name">
+
+      <label>Title</label>
+      <input data-bind="title">
+
+      <label>Email</label>
+      <input data-bind="email">
+
+      <label>Phone</label>
+      <input data-bind="phone">
+
+      <label>LinkedIn</label>
+      <input data-bind="linkedin">
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="block">
+      <label>Summary</label>
+      <textarea data-bind="summary" id="summary"></textarea>
+      <button id="improveSummary" class="btn">✨ Improve</button>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="block">
+      <label>Skills</label>
+      <div id="skillsList"></div>
+      <input id="skillInput" placeholder="Type skill & press Enter">
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="block">
+      <h4>Experience</h4>
+      <button id="addExp" class="btn small">+ Add Experience</button>
+      <div id="expList"></div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="block">
+      <h4>Projects</h4>
+      <button id="addProject" class="btn small">+ Add Project</button>
+      <div id="projectList"></div>
+    </div>
+
+  </aside>
+
+  <!-- RIGHT PANEL -->
+  <main class="preview" id="preview"></main>
+
+</div>
+
+<!-- ANALYZER -->
+<button class="fab" id="analyzerBtn">⚡</button>
+
+<div class="drawer" id="analyzerDrawer">
+  <h3>ATS Analyzer</h3>
+  <input id="jobRole" placeholder="Job Role">
+  <textarea id="jobDesc"></textarea>
+  <button id="analyzeBtn" class="btn">Analyze</button>
+  <div id="analysisOutput"></div>
+</div>
+
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>

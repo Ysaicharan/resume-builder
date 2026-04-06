@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #eef2f7;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: #0f172a;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* PREVIEW */
+.preview {
+  padding: 40px;
+  overflow-y: auto;
+}
+
+/* RESUME CARD */
+.resume {
+  max-width: 850px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.role {
+  color: #555;
+  margin: 5px 0;
+}
+
+.contact {
+  font-size: 14px;
+  color: #777;
+}
+
+/* SECTION */
+.section {
+  margin-top: 25px;
+}
+
+.section h3 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* ITEMS */
+.item {
+  margin-bottom: 10px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills span {
+  background: #111;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
